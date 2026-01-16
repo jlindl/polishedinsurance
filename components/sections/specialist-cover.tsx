@@ -77,9 +77,7 @@ export function SpecialistCover() {
                                         unoptimized
                                     />
                                     <div className="absolute inset-0 bg-gradient-to-t from-slate-900/80 via-transparent to-transparent" />
-                                    <div className={`absolute top-4 right-4 w-12 h-12 rounded-xl ${service.bg} flex items-center justify-center backdrop-blur-md bg-white/95 shadow-xl border border-white/20 group-hover:scale-110 transition-transform duration-300`}>
-                                        <service.icon className={`w-6 h-6 ${service.color}`} />
-                                    </div>
+
                                     <div className="absolute bottom-4 left-6 right-6">
                                         <h3 className="text-2xl font-bold text-white drop-shadow-md leading-tight">{service.title}</h3>
                                     </div>
@@ -89,32 +87,16 @@ export function SpecialistCover() {
                                         {service.description}
                                     </p>
                                     <div className="mt-auto pt-4 relative z-10 w-full">
-                                        <motion.a
+                                        <a
                                             href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
-                                            className="w-full bg-[#FF9900] hover:bg-[#ff8800] text-white font-bold text-lg h-14 rounded-full shadow-lg shadow-orange-500/20 transition-all duration-300 border-none relative overflow-hidden flex items-center justify-center cursor-pointer"
-                                            initial="initial"
-                                            whileHover="hover"
-                                            whileTap={{ scale: 0.98 }}
+                                            className="relative w-full overflow-hidden bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold text-lg h-14 rounded-full shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300 border-none flex items-center justify-center cursor-pointer group hover:scale-105 active:scale-95"
                                         >
-                                            <motion.div
-                                                className="absolute inset-0 w-full h-full bg-gradient-to-r from-transparent via-white/40 to-transparent"
-                                                variants={{
-                                                    initial: { x: "-100%" },
-                                                    hover: { x: "100%", transition: { duration: 1, repeat: Infinity, ease: "linear" } }
-                                                }}
-                                            />
-                                            <span className="relative flex items-center justify-center gap-2">
+                                            <span className="relative z-10 flex items-center justify-center gap-2">
                                                 Get Your Quote Online
-                                                <motion.div
-                                                    variants={{
-                                                        initial: { x: 0 },
-                                                        hover: { x: 4 }
-                                                    }}
-                                                >
-                                                    <ChevronRight className="w-5 h-5" />
-                                                </motion.div>
+                                                <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                             </span>
-                                        </motion.a>
+                                            <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
+                                        </a>
                                     </div>
                                 </CardContent>
                             </Card>

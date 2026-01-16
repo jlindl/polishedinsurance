@@ -59,7 +59,7 @@ export function SpecialistBenefits() {
                             >
                                 <a
                                     href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
-                                    className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-[#FF9900] hover:bg-[#ff8800] text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg shadow-orange-500/20 transition-colors border-none relative overflow-hidden group"
+                                    className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300 border-none relative overflow-hidden group hover:scale-105 active:scale-95"
                                 >
                                     <span className="relative z-10 flex items-center gap-2">
                                         Get Your Quote Online

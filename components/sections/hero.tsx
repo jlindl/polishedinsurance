@@ -61,7 +61,7 @@ export function Hero() {
                                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-300 blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
                                 <a
                                     href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
-                                    className="relative inline-flex items-center justify-center px-10 py-7 text-xl rounded-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold shadow-[0_0_30px_rgba(245,158,11,0.3)] border border-white/20 ring-4 ring-orange-500/10 overflow-hidden transition-all duration-200 active:scale-95"
+                                    className="relative inline-flex items-center justify-center px-10 py-7 text-xl rounded-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold shadow-[0_4px_14px_0_rgba(245,158,11,0.39)] hover:shadow-[0_6px_20px_rgba(245,158,11,0.23)] hover:scale-105 border border-white/20 ring-4 ring-orange-500/10 overflow-hidden transition-all duration-300 ease-out active:scale-95"
                                 >
                                     <span className="relative z-10">Get Your Quote Now</span>
                                     <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />

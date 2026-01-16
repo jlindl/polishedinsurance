@@ -25,13 +25,14 @@ export function Header() {
         { href: "/#services", label: "Services" },
         { href: "/#benefits", label: "Why Us" },
         { href: "/#testimonials", label: "Reviews" },
+        { href: "/blog", label: "Advice" },
         { href: "/#contact", label: "Contact" },
     ]
 
     return (
         <header
             className={cn(
-                "fixed z-50 transition-all duration-500 ease-in-out",
+                "fixed z-50 transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)]",
                 isScrolled
                     ? "top-4 left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-5xl rounded-2xl bg-slate-900/80 backdrop-blur-xl shadow-lg border border-white/10 py-3"
                     : "top-0 left-0 right-0 bg-transparent py-6"
@@ -40,7 +41,7 @@ export function Header() {
             <Container className="flex items-center justify-between px-4 md:px-6">
                 <Link href="/" className="flex items-center gap-2 z-50 relative group">
                     <div className={cn(
-                        "relative transition-all duration-300",
+                        "relative transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)]",
                         isScrolled ? "w-48 h-12" : "w-80 md:w-96 h-20 md:h-24"
                     )}>
                         <Image
@@ -88,10 +89,10 @@ export function Header() {
                         <a
                             href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
                             className={cn(
-                                "inline-flex items-center justify-center h-9 text-sm font-medium relative overflow-hidden rounded-full text-white shadow-lg transition-all hover:scale-105 active:scale-95 border border-white/10 px-6 group",
+                                "inline-flex items-center justify-center h-9 text-sm font-medium relative overflow-hidden rounded-full text-white shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 border border-white/10 px-6 group",
                                 isScrolled
-                                    ? "bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 shadow-orange-500/20"
-                                    : "bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-cyan-500/20"
+                                    ? "bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 shadow-orange-500/20 hover:shadow-orange-500/40"
+                                    : "bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-cyan-500/20 hover:shadow-cyan-500/40"
                             )}
                         >
                             <span className="relative z-10 flex items-center">
