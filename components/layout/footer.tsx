@@ -86,7 +86,7 @@ export function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-blue-500 shrink-0" />
-                                <a href="mailto:admin@polished-insurance.co.uk" className="hover:text-white transition-colors">admin@polished-insurance.co.uk</a>
+                                <a href="mailto:hello@polished-insurance.co.uk" className="hover:text-white transition-colors">hello@polished-insurance.co.uk</a>
                             </li>
                         </ul>
                     </motion.div>

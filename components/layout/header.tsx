@@ -26,7 +26,7 @@ export function Header() {
         { href: "/#benefits", label: "Why Us" },
         { href: "/#testimonials", label: "Reviews" },
         { href: "/blog", label: "Advice" },
-        { href: "/#contact", label: "Contact" },
+        { href: "/contact", label: "Contact" },
     ]
 
     return (
