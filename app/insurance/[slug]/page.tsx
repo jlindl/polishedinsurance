@@ -76,7 +76,7 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             "@type": "ListItem",
             "position": 3,
             "name": service.title,
-            "item": `https://polishedinsurance.co.uk/services/${service.slug}`
+            "item": `https://polishedinsurance.co.uk/insurance/${service.slug}`
         }]
     }
 
@@ -87,26 +87,19 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                 dangerouslySetInnerHTML={{ __html: JSON.stringify([jsonLd, breadcrumbLd]) }}
             />
             {/* Hero Section */}
-            <div className="relative pt-32 pb-20 lg:pt-48 lg:pb-32 overflow-hidden">
+            <div className="relative pt-32 pb-40 lg:pt-48 lg:pb-56 overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 z-0">
-                    <Image
-                        src={service.image}
-                        alt={service.title}
-                        fill
-                        className="object-cover blur-sm opacity-50"
-                        priority
-                        unoptimized
-                    />
-                    <div className="absolute inset-0 bg-gradient-to-b from-slate-900/90 via-slate-900/80 to-slate-50" />
+                    <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[600px] bg-blue-500/20 blur-[120px] rounded-full" />
+                    <div className="absolute inset-0 bg-slate-900/40 backdrop-blur-3xl" />
                 </div>
 
                 <Container className="relative z-10">
                     <Link
-                        href="/#services"
+                        href="/#cleaninginsurance"
                         className="inline-flex items-center text-slate-400 hover:text-white mb-8 transition-colors group"
                     >
                         <ArrowLeft className="w-4 h-4 mr-2 group-hover:-translate-x-1 transition-transform" />
-                        Back to Services
+                        Back to Cleaning Insurance
                     </Link>
 
                     <div className="max-w-4xl">
@@ -124,14 +117,14 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
             </div>
 
             {/* Content Section */}
-            <section className="py-20 -mt-20 relative z-20">
+            <section className="py-20 -mt-32 lg:-mt-40 relative z-20">
                 <Container>
                     <div className="grid grid-cols-1 lg:grid-cols-3 gap-12">
                         {/* Main Content */}
                         <div className="lg:col-span-2 space-y-8">
 
                             {/* Featured Image */}
-                            <div className="relative h-64 md:h-80 rounded-3xl overflow-hidden shadow-xl group">
+                            <div className="relative h-64 md:h-80 rounded-3xl overflow-hidden shadow-xl group border-[10px] border-white">
                                 <Image
                                     src={service.image}
                                     alt={service.title}

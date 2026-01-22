@@ -7,7 +7,7 @@ import { motion } from "framer-motion"
 
 export function Benefits() {
     return (
-        <Section id="benefits" className="relative overflow-hidden bg-white">
+        <Section id="benefits" className="relative overflow-hidden bg-white scroll-mt-32">
             <Container>
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
                     <motion.div

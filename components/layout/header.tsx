@@ -22,7 +22,7 @@ export function Header() {
     }, [])
 
     const navLinks = [
-        { href: "/#services", label: "Services" },
+        { href: "/#cleaninginsurance", label: "Cleaners Insurance" },
         { href: "/#benefits", label: "Why Us" },
         { href: "/#testimonials", label: "Reviews" },
         { href: "/blog", label: "Advice" },
@@ -34,7 +34,7 @@ export function Header() {
             className={cn(
                 "fixed z-50 transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)]",
                 isScrolled
-                    ? "top-4 left-4 right-4 md:left-1/2 md:-translate-x-1/2 md:w-full md:max-w-5xl rounded-2xl bg-slate-900/80 backdrop-blur-xl shadow-lg border border-white/10 py-3"
+                    ? "top-0 left-0 right-0 bg-slate-900/80 backdrop-blur-xl shadow-lg border-b border-white/10 py-3"
                     : "top-0 left-0 right-0 bg-transparent py-6"
             )}
         >
@@ -42,7 +42,7 @@ export function Header() {
                 <Link href="/" className="flex items-center gap-2 z-50 relative group">
                     <div className={cn(
                         "relative transition-all duration-700 ease-[cubic-bezier(0.25,0.8,0.25,1)]",
-                        isScrolled ? "w-48 h-12" : "w-80 md:w-96 h-20 md:h-24"
+                        isScrolled ? "w-48 h-12" : "w-80 md:w-72 h-20 md:h-24"
                     )}>
                         <Image
                             src="/logo.png"
@@ -62,7 +62,7 @@ export function Header() {
                                 key={link.href}
                                 href={link.href}
                                 className={cn(
-                                    "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 relative group overflow-hidden",
+                                    "px-4 py-2 rounded-lg text-sm font-medium transition-all duration-300 relative group overflow-hidden whitespace-nowrap",
                                     "text-slate-200 hover:text-white"
                                 )}
                             >

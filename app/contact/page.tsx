@@ -4,7 +4,7 @@ import { Phone, Mail, MapPin, Clock } from "lucide-react"
 
 export default function ContactPage() {
     return (
-        <main className="min-h-screen bg-slate-950 pt-24 pb-12 relative overflow-hidden">
+        <main className="min-h-screen bg-slate-950 pt-32 pb-12 relative overflow-hidden">
             {/* Background Effects */}
             <div className="absolute top-0 left-0 w-full h-[500px] bg-gradient-to-b from-cyan-900/10 to-transparent pointer-events-none" />
             <div className="absolute top-0 right-0 w-[500px] h-[500px] bg-blue-600/10 blur-[100px] rounded-full pointer-events-none" />

@@ -13,11 +13,11 @@ const MotionButton = motion(Button)
 
 export function Services() {
     return (
-        <Section className="bg-slate-50" id="services">
+        <Section className="bg-slate-50 scroll-mt-32" id="cleaninginsurance">
             <Container>
                 <div className="text-center max-w-3xl mx-auto mb-16">
                     <h2 className="text-3xl md:text-5xl font-black text-slate-900 mb-6 tracking-tight">
-                        Comprehensive Cover for Every Cleaner
+                        Comprehensive Cover For All Types of Cleaning
                     </h2>
                     <p className="text-slate-600 text-xl leading-relaxed">
                         We understand the cleaning industry. Our Zurich-backed policies provide the specific protection your business needs.
@@ -35,7 +35,7 @@ export function Services() {
                             whileHover={{ y: -12 }}
                         >
                             <Card className="h-full transition-all duration-300 border-none shadow-lg overflow-hidden group bg-white flex flex-col relative z-0 hover:shadow-2xl">
-                                <Link href={`/services/${service.slug}`} className="block relative h-64 w-full overflow-hidden shrink-0 cursor-pointer">
+                                <Link href={`/insurance/${service.slug}`} className="block relative h-64 w-full overflow-hidden shrink-0 cursor-pointer">
                                     <Image
                                         src={service.cardImage || service.image}
                                         alt={service.title}
@@ -55,7 +55,7 @@ export function Services() {
                                     </p>
                                     <div className="mt-auto pt-4 relative z-10 w-full flex flex-col gap-3">
                                         <Link
-                                            href={`/services/${service.slug}`}
+                                            href={`/insurance/${service.slug}`}
                                             className="w-full bg-blue-50 hover:bg-blue-100 text-blue-600 font-bold text-lg h-12 rounded-xl transition-all duration-300 hover:scale-105 active:scale-95 border-none flex items-center justify-center"
                                         >
                                             <span className="flex items-center justify-center gap-2">

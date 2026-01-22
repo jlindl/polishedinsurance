@@ -5,7 +5,7 @@ export default function sitemap(): MetadataRoute.Sitemap {
     const baseUrl = 'https://polishedinsurance.co.uk' // Placeholder domain
 
     const serviceUrls = services.map((service) => ({
-        url: `${baseUrl}/services/${service.slug}`,
+        url: `${baseUrl}/insurance/${service.slug}`,
         lastModified: new Date(),
         changeFrequency: 'weekly' as const,
         priority: 0.8,

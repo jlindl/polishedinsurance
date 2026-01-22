@@ -2,7 +2,7 @@ import { Sparkles, Home, Building2, Key, AppWindow, Flame, CheckCircle2, Phone, 
 
 export const services = [
     {
-        slug: "carpet-cleaners",
+        slug: "carpet-cleaners-insurance",
         title: "Carpet Cleaners Insurance",
         shortDescription: "If you run a carpet cleaning business then you will need an insurance policy that pays claims for any damage you may cause to the carpets you clean.",
         fullDescription: `If you run a carpet cleaning business then you will need an insurance policy that pays claims for any damage you may cause to the carpets you clean. 
@@ -26,7 +26,7 @@ Our comprehensive cover ensures you can work with confidence, knowing that even 
         }
     },
     {
-        slug: "domestic-cleaners",
+        slug: "domestic-cleaners-insurance",
         title: "Domestic Cleaners Insurance",
         shortDescription: "When you are cleaning in a customers' property you are legally liable for any damage you cause. Our policy covers you for damage to customer's property.",
         fullDescription: `When you are cleaning in a customers' property you are legally liable for any damage you cause. Not all insurance policies cover you for the damage you cause to a customer's property. But our policy does. 
@@ -50,7 +50,7 @@ We provide peace of mind for both you and your clients. Whether you're a sole tr
         }
     },
     {
-        slug: "contract-cleaners",
+        slug: "contract-cleaners-insurance",
         title: "Contract Cleaners Insurance",
         shortDescription: "If you run a contract cleaning business and need cover for the work you do in customer's premises then we can help.",
         fullDescription: `If you run a contract cleaning business and need cover for the work you do in customer's premises then we can help. 
@@ -74,7 +74,7 @@ Contract cleaning often involves higher risks and larger contracts. Our policies
         }
     },
     {
-        slug: "end-of-tenancy",
+        slug: "end-of-tenancy-cleaners-insurance",
         title: "End of Tenancy Cleaners Insurance",
         shortDescription: "When you are undertaking an end of tenancy cleaning job, will your current insurance policy pay any claims for damage?",
         fullDescription: `When you are undertaking an end of tenancy cleaning job, will your current insurance policy pay any claims for damage that you may cause to the property you are cleaning? Probably not. 
@@ -98,7 +98,7 @@ End of tenancy cleans require a deep level of detail and often involve working w
         }
     },
     {
-        slug: "office-cleaners",
+        slug: "office-cleaners-insurance",
         title: "Office Cleaners Insurance",
         shortDescription: "When you operate an office cleaning business, your customers are very important to you. We help you protect your reputation.",
         fullDescription: `When you operate an office cleaning business, your customers are very important to you, and we understand that. 
@@ -122,7 +122,7 @@ Our policy is underwritten by Zurich, one of the world's leading insurance compa
         }
     },
     {
-        slug: "window-cleaners",
+        slug: "window-cleaners-insurance",
         title: "Window Cleaners Insurance",
         shortDescription: "As a window cleaner you may get customer's who accuse you of scratching their new French doors or their recently built conservatory roof.",
         fullDescription: `As a window cleaner you may get customer's who accuse you of scratching their new French doors or their recently built conservatory roof. 
@@ -146,7 +146,7 @@ By having cover with polished insurance your claim will be dealt with whether yo
         }
     },
     {
-        slug: "oven-cleaners",
+        slug: "oven-cleaners-insurance",
         title: "Oven Cleaners Insurance",
         shortDescription: "If you run an oven cleaning business then you will want to be sure that if you damage a customer's oven your insurer will pay.",
         fullDescription: `If you run an oven cleaning business then you will want to be sure that if you damage a customer's oven when cleaning it that your insurer will pay for the damage you caused. 
@@ -170,7 +170,7 @@ So make sure you have the best cover you can by getting a quote from polished in
         }
     },
     {
-        slug: "driveway-cleaners",
+        slug: "driveway-cleaners-insurance",
         title: "Driveway Cleaners Insurance",
         shortDescription: "Do you clean driveways, patios or communal areas using a power washer? Does your current insurer cover any damage?",
         fullDescription: `Do you clean driveways, patios or communal areas using a power washer? Does your current insurer cover any damage that the water may cause? Or do they limit the pressure you can use to something like 100 bar? 
@@ -194,7 +194,7 @@ Our policies are designed for high-pressure cleaning equipment and the specific 
         }
     },
     {
-        slug: "upholstery-cleaners",
+        slug: "upholstery-cleaners-insurance",
         title: "Upholstery Cleaners Insurance",
         shortDescription: "If you run an upholstery cleaning business then you will need an insurance policy that pays claims for any damage you may cause.",
         fullDescription: `If you run an upholstery cleaning business then you will need an insurance policy that pays claims for any damage you may cause to the sofas, curtains or other soft furnishings that you clean. 

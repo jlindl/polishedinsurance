@@ -5,6 +5,7 @@ import Image from "next/image"
 import { Container } from "@/components/ui/layout"
 import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react"
 import { motion } from "framer-motion"
+import { services } from "@/lib/services"
 
 export function Footer() {
     return (
@@ -43,12 +44,13 @@ export function Footer() {
                     >
                         <h3 className="text-white font-semibold mb-6">Insurance Types</h3>
                         <ul className="space-y-3 text-sm">
-                            <li><FooterLink href="#">Carpet Cleaners</FooterLink></li>
-                            <li><FooterLink href="#">Domestic Cleaners</FooterLink></li>
-                            <li><FooterLink href="#">Contract Cleaners</FooterLink></li>
-                            <li><FooterLink href="#">Window Cleaners</FooterLink></li>
-                            <li><FooterLink href="#">Oven Cleaners</FooterLink></li>
-                            <li><FooterLink href="#">Office Cleaners</FooterLink></li>
+                            {services.slice(0, 6).map((service) => (
+                                <li key={service.slug}>
+                                    <FooterLink href={`/insurance/${service.slug}`}>
+                                        {service.title.replace(' Insurance', '')}
+                                    </FooterLink>
+                                </li>
+                            ))}
                         </ul>
                     </motion.div>
 
@@ -60,7 +62,7 @@ export function Footer() {
                     >
                         <h3 className="text-white font-semibold mb-6">Quick Links</h3>
                         <ul className="space-y-3 text-sm">
-                            <li><FooterLink href="#">Get a Quote</FooterLink></li>
+                            <li><FooterLink href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true">Get a Quote</FooterLink></li>
                             <li><FooterLink href="#">Make a Claim</FooterLink></li>
                             <li><FooterLink href="#">Privacy Policy</FooterLink></li>
                             <li><FooterLink href="#">Terms & Conditions</FooterLink></li>

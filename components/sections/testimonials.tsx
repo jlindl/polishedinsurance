@@ -70,7 +70,7 @@ export function Testimonials() {
     }
 
     return (
-        <Section id="testimonials" className="bg-slate-50 overflow-hidden">
+        <Section id="testimonials" className="bg-slate-50 overflow-hidden scroll-mt-32">
             <Container>
                 <motion.div
                     className="text-center mb-12"
