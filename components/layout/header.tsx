@@ -90,9 +90,7 @@ export function Header() {
                             href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
                             className={cn(
                                 "inline-flex items-center justify-center h-9 text-sm font-medium relative overflow-hidden rounded-full text-white shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 border border-white/10 px-6 group",
-                                isScrolled
-                                    ? "bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 shadow-orange-500/20 hover:shadow-orange-500/40"
-                                    : "bg-gradient-to-r from-cyan-500 to-blue-600 hover:from-cyan-400 hover:to-blue-500 shadow-cyan-500/20 hover:shadow-cyan-500/40"
+                                "bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 shadow-orange-500/20 hover:shadow-orange-500/40"
                             )}
                         >
                             <span className="relative z-10 flex items-center">

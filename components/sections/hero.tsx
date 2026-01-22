@@ -47,9 +47,9 @@ export function Hero() {
                         </h1>
 
                         <p className="text-lg md:text-xl text-slate-100/90 max-w-2xl mx-auto font-light leading-relaxed drop-shadow-lg">
-                            <span className="font-semibold text-white">Carpet</span> • <span className="font-semibold text-white">Domestic</span> • <span className="font-semibold text-white">Commercial</span>
+                            <span className="font-semibold text-white">Domestic</span> • <span className="font-semibold text-white">Commercial</span> • <span className="font-semibold text-white">Industrial</span>
                             <br />
-                            Get comprehensive coverage tailored for your cleaning business from just <span className="text-cyan-300 font-bold">£120/year</span>.
+                            Get comprehensive coverage tailored for your cleaning business from just <span className="text-cyan-300 font-bold">£120 per year</span>.
                         </p>
 
                         <div className="pt-2 flex flex-col items-center gap-5">
