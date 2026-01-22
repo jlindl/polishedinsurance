@@ -27,7 +27,7 @@ export function Footer() {
                             />
                         </div>
                         <p className="text-sm leading-relaxed mb-6 text-slate-400">
-                            Specialist insurance brokers for the cleaning industry. secure coverage for your business with a team that understands your needs.
+                            Specialist insurance brokers for the cleaning industry. Secure coverage for your business with a team that understands your needs.
                         </p>
                         <div className="flex gap-4">
                             <SocialLink href="#" icon={<Facebook className="w-4 h-4" />} />
