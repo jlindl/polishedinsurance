@@ -142,43 +142,85 @@ export const blogPosts = [
             description: "Understand the difference between Public Liability and Employers' Liability insurance. Learn which cover is legally required for UK cleaning businesses."
         }
     },
-    {
-        slug: "coshh-explained-simply",
-        title: "COSHH Explained Simply: A Cleaner's Guide to Safety",
-        excerpt: "Chemical safety doesn't have to be complicated. Our simple guide to COSHH regulations helps you stay safe and compliant without the headache.",
-        date: "January 24, 2024",
-        readingTime: "2 min read",
-        image: "/blog/coshh-safety.png",
-        content: `
-            <p><strong>COSHH</strong> stands for <em>Control of Substances Hazardous to Health</em>. It might sound like boring regulation, but for cleaners, it's basically the law that keeps you safe from getting sick or burned by the chemicals you use every day.</p>
+    },
+{
+    slug: "the-true-cost-of-a-cleaning-claim",
+        title: "The True Cost of a Claim: It's More Than Just the breakage",
+            excerpt: "Think a broken vase just costs the price of a replacement? Think again. We explore the hidden costs of liability claims that can bankrupt a small business.",
+                date: "January 25, 2024",
+                    readingTime: "4 min read",
+                        image: "/blog/true-cost-of-claim.png",
+                            content: `
+            <p>Accidents happen. It's an unavoidable reality of the cleaning industry. But many cleaners underestimate the true financial impact of "just a small accident."</p>
 
-            <h2>What counts as a "Hazardous Substance"?</h2>
-            <p>In cleaning, this usually means:</p>
+            <p>When you look at insurance, it's easy to think, "I'll just pay for it myself if I break something small." But the direct cost of the item is often just the tip of the iceberg.</p>
+
+            <h2>Case Study: The "Small" Trip</h2>
+            <p>Imagine you are vacuuming an office reception. You turn around to grab a duster, leaving the vacuum cord trailing for just a few seconds. A visitor walks in, trips, and fractures their wrist.</p>
+            
+            <p>The costs start mounting immediately:</p>
             <ul>
-                <li><strong>Bleach</strong> and toilet cleaners (corrosive).</li>
-                <li><strong>Oven cleaners</strong> (often highly caustic).</li>
-                <li><strong>Solvents</strong> and descalers.</li>
-                <li>Even <strong>dust</strong> (if you generate a lot of it).</li>
+                <li><strong>Compensation for Injury:</strong> £5,000 - £15,000 (depending on severity and recovery time).</li>
+                <li><strong>Loss of Earnings:</strong> If the visitor can't work for 6 weeks, you are liable for their lost wages.</li>
+                <li><strong>Legal Fees (Theirs):</strong> You have to pay their solicitor's fees.</li>
+                <li><strong>Legal Fees (Yours):</strong> You need a solicitor to defend you.</li>
+            </ul>
+            <p><strong>Total Potential Cost: £25,000+</strong></p>
+            <p>Without <a href="/">Public Liability Insurance</a>, this amount comes directly from your personal assets. Could your business survive that hit?</p>
+
+            <h2>The Hidden Costs of Property Damage</h2>
+            <p>Even simple property damage can spiral. Let's say you use the wrong product on a limestone floor.</p>
+            <ul>
+                <li><strong>Restoration Specialists:</strong> Specialist stone restorers charge hundreds per day.</li>
+                <li><strong>Business Interruption:</strong> If the floor is in a shop or restaurant that has to close for repairs, you are liable for their lost profit.</li>
+                <li><strong>Reputation Damage:</strong> This is the hardest to quantify but the most damaging. A client who has a bad experience with a claim will tell everyone.</li>
             </ul>
 
-            <h2>Your 5-Step Safety Plan</h2>
-            <p>You don't need a degree in chemistry to be COSHH compliant. Just follow these simple rules:</p>
+            <h2>The Value of "Peace of Mind"</h2>
+            <p>Insurance isn't just a financial safety net; it's a professional credential. It shows your clients that you take your business—and their property—seriously.</p>
+            <p>When a claim happens, having an insurer like Zurich (via Polished Insurance) step in to handle the negotiations, appoint loss adjusters, and pay the settlement allows you to focus on what you do best: running your business.</p>
+        `,
+                                seo: {
+        title: "True Cost of a Cleaning Claim | Liability Examples",
+            description: "Real-world examples of cleaning insurance claims. Why the cost of an accident is often much higher than just the broken item."
+    }
+},
+{
+    slug: "keyholding-risks-explained",
+        title: "Keyholding Risks Explained: Protecting Your Client's Security",
+            excerpt: "Holding keys for clients is a massive responsibility. Learn how to manage keys securely and why standard insurance might not cover you if you lose them.",
+                date: "January 26, 2024",
+                    readingTime: "3 min read",
+                        image: "/blog/keyholding-risks.png",
+                            content: `
+            <p>For many domestic and commercial cleaners, being a "keyholder" is part of the job. It allows you to clean while the client is out, offering flexibility for everyone. But have you considered the massive security risk this places on your shoulders?</p>
+
+            <h2>The "Consequential Loss" Trap</h2>
+            <p>If you lose a key, the cost isn't just £10 for a replacement cut. The real risk is that the security of the property is now compromised.</p>
+            <p>Most clients—and insurers—will insist that if a key is lost and can be linked to the property, the <strong>locks must be changed</strong>. For a commercial building with a master key system, this could cost thousands.</p>
+
+            <h2>Golden Rules for Key Security</h2>
+            <p>To protect yourself and your compliance with insurance policies, follow these rules:</p>
             <ol>
-                <li><strong>Read the Label:</strong> Never use a bottle without a label. Look for the hazard symbols (orange squares or red diamonds). If it has a "Corrosive" symbol, treat it with extreme respect.</li>
-                <li><strong>Don't Mix Chemicals:</strong> This is rule #1. Mixing bleach with other cleaners (especially acids like limescale remover) can create deadly chlorine gas. Just don't do it.</li>
-                <li><strong>Wear your PPE:</strong> Gloves aren't a suggestion; they are a barrier between your skin and chemical burns. Goggles are essential when using sprays that could mist back into your eyes.</li>
-                <li><strong>Ventilation:</strong> Always open a window. Fumes can build up in small bathrooms very quickly and cause dizziness or fainting.</li>
-                <li><strong>Know the First Aid:</strong> Check the "Safety Data Sheet" (SDS) for your products. It will tell you exactly what to do if you swallow something or get it in your eyes (usually "rinse with water for 15 minutes", but check specifically).</li>
+                <li><strong>Never Label with Addresses:</strong> This is the cardinal sin of keyholding. If you lose a key with an address tag, you have effectively handed a burglar a free pass. Use a <em>colour code</em> or <em>number system</em> instead.</li>
+                <li><strong>Keep a Log Book:</strong> detailed records of who has which key and when they signed it in/out.</li>
+                <li><strong>Store Securely:</strong> When not in use, keys should be in a locked cabinet or safe, not left on a car dashboard.</li>
             </ol>
 
-            <h2>Why it Matters</h2>
-            <p>Ignoring COSHH can lead to serious skin dermatitis, lung problems, or blindness. It can also invalidate your insurance if an employee is injured because you didn't provide proper training.</p>
-
-            <p>Stay safe, keep your kit organized, and make sure your <a href="/">cleaning insurance</a> covers you for treatment risks and accidental damage caused by chemicals.</p>
+            <h2>Does Your Insurance Cover It?</h2>
+            <p>Standard Public Liability policies often <strong>exclude</strong> loss of keys or limit the cover significantly. They might pay for the key, but not the lock replacement.</p>
+            
+            <p>At Polished Insurance, our policy includes specific <strong>Loss of Keys Cover</strong>. This pays for:</p>
+            <ul>
+                <li>Replacement of locks.</li>
+                <li>Replacement of keys.</li>
+                <li>Cost of resetting intruder alarms.</li>
+            </ul>
+            <p>Don't risk your reputation on a lost key. Ensure you have the right <a href="/">keyholding insurance</a> in place today.</p>
         `,
-        seo: {
-            title: "COSHH Guide for Cleaners | Chemical Safety Explained",
-            description: "Simple explanation of COSHH regulations for cleaners. Learn how to handle hazardous substances safely and stay compliant with UK law."
-        }
+                                seo: {
+        title: "Keyholding Risks & Insurance for Cleaners | Security Guide",
+            description: "Expert advice on managing client keys securely. Understand the risks of keyholding and ensure your cleaning insurance covers lost keys and lock replacement."
     }
+}
 ]
