@@ -142,15 +142,14 @@ export const blogPosts = [
             description: "Understand the difference between Public Liability and Employers' Liability insurance. Learn which cover is legally required for UK cleaning businesses."
         }
     },
-    },
-{
-    slug: "the-true-cost-of-a-cleaning-claim",
+    {
+        slug: "the-true-cost-of-a-cleaning-claim",
         title: "The True Cost of a Claim: It's More Than Just the breakage",
-            excerpt: "Think a broken vase just costs the price of a replacement? Think again. We explore the hidden costs of liability claims that can bankrupt a small business.",
-                date: "January 25, 2024",
-                    readingTime: "4 min read",
-                        image: "/blog/true-cost-of-claim.png",
-                            content: `
+        excerpt: "Think a broken vase just costs the price of a replacement? Think again. We explore the hidden costs of liability claims that can bankrupt a small business.",
+        date: "January 25, 2024",
+        readingTime: "4 min read",
+        image: "/blog/true-cost-of-claim.png",
+        content: `
             <p>Accidents happen. It's an unavoidable reality of the cleaning industry. But many cleaners underestimate the true financial impact of "just a small accident."</p>
 
             <p>When you look at insurance, it's easy to think, "I'll just pay for it myself if I break something small." But the direct cost of the item is often just the tip of the iceberg.</p>
@@ -180,19 +179,19 @@ export const blogPosts = [
             <p>Insurance isn't just a financial safety net; it's a professional credential. It shows your clients that you take your business—and their property—seriously.</p>
             <p>When a claim happens, having an insurer like Zurich (via Polished Insurance) step in to handle the negotiations, appoint loss adjusters, and pay the settlement allows you to focus on what you do best: running your business.</p>
         `,
-                                seo: {
-        title: "True Cost of a Cleaning Claim | Liability Examples",
+        seo: {
+            title: "True Cost of a Cleaning Claim | Liability Examples",
             description: "Real-world examples of cleaning insurance claims. Why the cost of an accident is often much higher than just the broken item."
-    }
-},
-{
-    slug: "keyholding-risks-explained",
+        }
+    },
+    {
+        slug: "keyholding-risks-explained",
         title: "Keyholding Risks Explained: Protecting Your Client's Security",
-            excerpt: "Holding keys for clients is a massive responsibility. Learn how to manage keys securely and why standard insurance might not cover you if you lose them.",
-                date: "January 26, 2024",
-                    readingTime: "3 min read",
-                        image: "/blog/keyholding-risks.png",
-                            content: `
+        excerpt: "Holding keys for clients is a massive responsibility. Learn how to manage keys securely and why standard insurance might not cover you if you lose them.",
+        date: "January 26, 2024",
+        readingTime: "3 min read",
+        image: "/blog/keyholding-risks.png",
+        content: `
             <p>For many domestic and commercial cleaners, being a "keyholder" is part of the job. It allows you to clean while the client is out, offering flexibility for everyone. But have you considered the massive security risk this places on your shoulders?</p>
 
             <h2>The "Consequential Loss" Trap</h2>
@@ -218,9 +217,9 @@ export const blogPosts = [
             </ul>
             <p>Don't risk your reputation on a lost key. Ensure you have the right <a href="/">keyholding insurance</a> in place today.</p>
         `,
-                                seo: {
-        title: "Keyholding Risks & Insurance for Cleaners | Security Guide",
+        seo: {
+            title: "Keyholding Risks & Insurance for Cleaners | Security Guide",
             description: "Expert advice on managing client keys securely. Understand the risks of keyholding and ensure your cleaning insurance covers lost keys and lock replacement."
+        }
     }
-}
 ]
