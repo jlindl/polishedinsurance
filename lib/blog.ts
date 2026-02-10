@@ -221,5 +221,85 @@ export const blogPosts = [
             title: "Keyholding Risks & Insurance for Cleaners | Security Guide",
             description: "Expert advice on managing client keys securely. Understand the risks of keyholding and ensure your cleaning insurance covers lost keys and lock replacement."
         }
+    },
+    {
+        slug: "handling-accidental-damage-cleaning",
+        title: "Handling Accidental Damage: A Step-by-Step Guide",
+        excerpt: "Breaking a client's item is every cleaner's nightmare. Learn the professional way to handle accidents, report breakage, and manage the situation calmly.",
+        date: "January 28, 2024",
+        readingTime: "3 min read",
+        image: "/blog/accidental-damage.jpg",
+        content: `
+            <p>It’s the sound every cleaner dreads: the crunch of a vacuum against a skirting board, the smash of a vase slipping from a duster, or the snap of a blind mechanism. Accidental damage is, unfortunately, a "when" not "if" scenario in the cleaning industry.</p>
+
+            <p>How you handle the immediate aftermath defines your professionalism and can save your client relationship. Here is your step-by-step guide on what to do when things break.</p>
+
+            <h2>Step 1: Stop and Assess</h2>
+            <p>The moment an accident happens, stop what you are doing. Ensure the area is safe (e.g., pick up broken glass safely). Do not try to rush to finish the room.</p>
+            
+            <h2>Step 2: Do NOT Attempt a DIY Repair</h2>
+            <p>This is a common mistake. You might think superglue can fix that ornament, or a bit of aggressive scrubbing will remove that spill. <strong>Stop.</strong></p>
+            <p>Amateur repairs often cause more damage and can void any chance of a professional restoration. If you try to hide it or fix it and fail, you lose the client's trust entirely.</p>
+
+            <h2>Step 3: Document Everything</h2>
+            <p>Before you move anything (if safe), take photos.
+            <ul>
+                <li>Take a wide shot of where the item was.</li>
+                <li>Take close-ups of the damage.</li>
+                <li>Keep any broken pieces; do not throw them away until the claim is resolved.</li>
+            </ul>
+            </p>
+
+            <h2>Step 4: Be Honest and Immediate</h2>
+            <p>Contact the client as soon as possible. If they are home, tell them face-to-face. If they are out, call them. Do not leave a note if you can avoid it—a phone call allows you to convey your sincere apologies.</p>
+            <p>Say something like: <em>"I am so incredibly sorry, but I have had an accident while dusting and damaged your [item]. I wanted to let you know immediately. I have taken photos and will contact my insurance provider."</em></p>
+
+            <h2>Step 5: Contact Your Insurer</h2>
+            <p>This is why you pay your premiums. Contact Polished Insurance to start the claims process. We can guide you on whether it's worth claiming (depending on your excess) or if it's better to settle privately for small items.</p>
+            
+            <blockquote>
+                "Honesty is the only policy. Clients can forgive an accident, but they will never forgive a cover-up."
+            </blockquote>
+        `,
+        seo: {
+            title: "What To Do When You Break Something | Cleaning Advice",
+            description: "Step-by-step guide for cleaners on handling accidental damage. How to report breakage to clients and manage insurance claims professionally."
+        }
+    },
+    {
+        slug: "what-is-treatment-risk-insurance",
+        title: "Treatment Risks: The Gap in Standard Public Liability",
+        excerpt: "Did you know most public liability policies won't pay for the item you are actually scrubbing? We explain 'Damage to Property Worked Upon' and why cleaners need it.",
+        date: "January 30, 2024",
+        readingTime: "4 min read",
+        image: "/blog/treatment-risk.jpg",
+        content: `
+            <p>If you ask most cleaners what their insurance covers, they'll say: "If I break something, it pays for it."</p>
+            <p><strong>This is not always true.</strong></p>
+            <p>There is a massive gap in many standard Public Liability policies called the "Damage to Property Worked Upon" exclusion. In the insurance world, this is often covered under an extension known as <strong>Treatment Risk</strong>.</p>
+
+            <h2>The "Standard" Cover</h2>
+            <p>Standard Public Liability is designed primarily for third-party injury and accidental damage to <em>surrounding</em> property.</p>
+            <ul>
+                <li><strong>Covered:</strong> You are cleaning a window, step back, and knock over a vase on a table behind you. The vase is covered because you weren't working on it.</li>
+                <li><strong>NOT Covered:</strong> You are cleaning the vase itself, and it slips out of your hands. Because you were "working on" the item, a standard policy excludes it.</li>
+            </ul>
+
+            <h2>Why This is Dangerous for Cleaners</h2>
+            <p>As a cleaner, your entire job is "working on" property. You are scrubbing floors, wiping worktops, polishing mirrors, and dusting electronics.</p>
+            <p>If your policy excludes "Damage to Property Worked Upon," you have effectively no cover for the very task you are paid to do. If you scratch a stainless steel hob while scrubbing it, or shrink a carpet while steam cleaning it, a standard policy will reject the claim.</p>
+
+            <h2>The Polished Insurance Difference</h2>
+            <p>We understand the cleaning industry. We know that accidents happen <em>during</em> the cleaning process, not just around it.</p>
+            <p>That is why our policies include <strong>Treatment Risk</strong> cover. We cover the item you are actually cleaning, giving you true peace of mind.</p>
+
+            <h2>Check Your Policy Wording</h2>
+            <p>Go and check your current insurance documents. Look for exclusions related to "Property being worked upon." If you find it, you might be more exposed than you think.</p>
+            <p>Don't wait for a claim to be declined. Switch to a specialist cleaning insurance provider who covers the real risks of your trade.</p>
+        `,
+        seo: {
+            title: "Treatment Risk Insurance Explained | Cleaning Liability",
+            description: "What is Treatment Risk relative to cleaning insurance? Why standard public liability excludes damage to items you are actually cleaning."
+        }
     }
 ]
