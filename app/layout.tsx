@@ -2,6 +2,7 @@ import type { Metadata } from "next";
 import { Poppins } from "next/font/google";
 import { Header } from "@/components/layout/header";
 import { Footer } from "@/components/layout/footer";
+import { FacebookPixel } from "@/components/analytics/facebook-pixel";
 import "./globals.css";
 
 const poppins = Poppins({
@@ -41,6 +42,7 @@ export default function RootLayout({
         className={`${poppins.variable} font-sans antialiased`}
         suppressHydrationWarning
       >
+        <FacebookPixel />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
