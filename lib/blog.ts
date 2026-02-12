@@ -143,6 +143,45 @@ export const blogPosts = [
         }
     },
     {
+        slug: "coshh-explained-simply",
+        title: "COSHH Explained Simply: A Cleaner's Guide to Safety",
+        excerpt: "Chemical safety doesn't have to be complicated. Our simple guide to COSHH regulations helps you stay safe and compliant without the headache.",
+        date: "January 24, 2024",
+        readingTime: "2 min read",
+        image: "/blog/coshh-safety.png",
+        content: `
+            <p><strong>COSHH</strong> stands for <em>Control of Substances Hazardous to Health</em>. It might sound like boring regulation, but for cleaners, it's basically the law that keeps you safe from getting sick or burned by the chemicals you use every day.</p>
+
+            <h2>What counts as a "Hazardous Substance"?</h2>
+            <p>In cleaning, this usually means:</p>
+            <ul>
+                <li><strong>Bleach</strong> and toilet cleaners (corrosive).</li>
+                <li><strong>Oven cleaners</strong> (often highly caustic).</li>
+                <li><strong>Solvents</strong> and descalers.</li>
+                <li>Even <strong>dust</strong> (if you generate a lot of it).</li>
+            </ul>
+
+            <h2>Your 5-Step Safety Plan</h2>
+            <p>You don't need a degree in chemistry to be COSHH compliant. Just follow these simple rules:</p>
+            <ol>
+                <li><strong>Read the Label:</strong> Never use a bottle without a label. Look for the hazard symbols (orange squares or red diamonds). If it has a "Corrosive" symbol, treat it with extreme respect.</li>
+                <li><strong>Don't Mix Chemicals:</strong> This is rule #1. Mixing bleach with other cleaners (especially acids like limescale remover) can create deadly chlorine gas. Just don't do it.</li>
+                <li><strong>Wear your PPE:</strong> Gloves aren't a suggestion; they are a barrier between your skin and chemical burns. Goggles are essential when using sprays that could mist back into your eyes.</li>
+                <li><strong>Ventilation:</strong> Always open a window. Fumes can build up in small bathrooms very quickly and cause dizziness or fainting.</li>
+                <li><strong>Know the First Aid:</strong> Check the "Safety Data Sheet" (SDS) for your products. It will tell you exactly what to do if you swallow something or get it in your eyes (usually "rinse with water for 15 minutes", but check specifically).</li>
+            </ol>
+
+            <h2>Why it Matters</h2>
+            <p>Ignoring COSHH can lead to serious skin dermatitis, lung problems, or blindness. It can also invalidate your insurance if an employee is injured because you didn't provide proper training.</p>
+
+            <p>Stay safe, keep your kit organized, and make sure your <a href="/">cleaning insurance</a> covers you for treatment risks and accidental damage caused by chemicals.</p>
+        `,
+        seo: {
+            title: "COSHH Guide for Cleaners | Chemical Safety Explained",
+            description: "Simple explanation of COSHH regulations for cleaners. Learn how to handle hazardous substances safely and stay compliant with UK law."
+        }
+    },
+    {
         slug: "the-true-cost-of-a-cleaning-claim",
         title: "The True Cost of a Claim: It's More Than Just the breakage",
         excerpt: "Think a broken vase just costs the price of a replacement? Think again. We explore the hidden costs of liability claims that can bankrupt a small business.",
