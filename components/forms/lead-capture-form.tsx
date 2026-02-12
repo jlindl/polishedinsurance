@@ -10,16 +10,42 @@ import { CheckCircle2, ChevronRight, Loader2 } from "lucide-react"
 export function LeadCaptureForm({ className }: { className?: string }) {
     const [isLoading, setIsLoading] = React.useState(false)
     const [isSuccess, setIsSuccess] = React.useState(false)
+    const [error, setError] = React.useState<string | null>(null)
 
     async function onSubmit(event: React.FormEvent<HTMLFormElement>) {
         event.preventDefault()
         setIsLoading(true)
+        setError(null)
 
-        // Mock submission delay
-        setTimeout(() => {
-            setIsLoading(false)
+        const formData = new FormData(event.currentTarget)
+        const data = {
+            name: formData.get('name') as string,
+            email: formData.get('email') as string,
+            phone: formData.get('phone') as string,
+        }
+
+        try {
+            const response = await fetch('/api/ghl/contact', {
+                method: 'POST',
+                headers: {
+                    'Content-Type': 'application/json',
+                },
+                body: JSON.stringify(data),
+            })
+
+            const result = await response.json()
+
+            if (!response.ok) {
+                throw new Error(result.error || 'Failed to submit form')
+            }
+
             setIsSuccess(true)
-        }, 1500)
+        } catch (err) {
+            console.error('Form submission error:', err)
+            setError(err instanceof Error ? err.message : 'Something went wrong. Please try again.')
+        } finally {
+            setIsLoading(false)
+        }
     }
 
     if (isSuccess) {
@@ -48,16 +74,22 @@ export function LeadCaptureForm({ className }: { className?: string }) {
             <form onSubmit={onSubmit} className="space-y-4">
                 <div className="space-y-2">
                     <Label htmlFor="name" className="text-slate-700">Full Name</Label>
-                    <Input id="name" required placeholder="Joe Bloggs" className="bg-slate-50 border-slate-200" />
+                    <Input id="name" name="name" required placeholder="Joe Bloggs" className="bg-slate-50 border-slate-200" />
                 </div>
                 <div className="space-y-2">
                     <Label htmlFor="email" className="text-slate-700">Email Address</Label>
-                    <Input id="email" required type="email" placeholder="joe@cleaning.co.uk" className="bg-slate-50 border-slate-200" />
+                    <Input id="email" name="email" required type="email" placeholder="joe@cleaning.co.uk" className="bg-slate-50 border-slate-200" />
                 </div>
                 <div className="space-y-2">
                     <Label htmlFor="phone" className="text-slate-700">Phone Number</Label>
-                    <Input id="phone" required type="tel" placeholder="07700 900000" className="bg-slate-50 border-slate-200" />
+                    <Input id="phone" name="phone" required type="tel" placeholder="07700 900000" className="bg-slate-50 border-slate-200" />
                 </div>
+
+                {error && (
+                    <div className="p-3 bg-red-50 border border-red-200 rounded-lg">
+                        <p className="text-sm text-red-600">{error}</p>
+                    </div>
+                )}
 
                 <Button
                     type="submit"
