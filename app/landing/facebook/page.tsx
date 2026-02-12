@@ -8,44 +8,43 @@ import { ChevronRight, ShieldCheck, Star, CheckCircle2 } from "lucide-react"
 import Image from "next/image"
 import { motion } from "framer-motion"
 
+import { LeadCaptureForm } from "@/components/forms/lead-capture-form"
+
+// ... existing imports
+
 export default function FacebookLandingPage() {
     return (
         <main className="min-h-screen bg-slate-50">
             {/* Hero Section */}
-            <section className="relative min-h-[85vh] flex items-center pt-28 pb-16 lg:pt-32 lg:pb-24 overflow-hidden bg-slate-900">
+            <section className="relative min-h-[90vh] flex items-center pt-24 pb-16 lg:pt-32 lg:pb-24 overflow-hidden bg-slate-900">
                 <div className="absolute inset-0 z-0">
                     <Image
                         src="/hero-cleaning-bg.png"
                         alt="Professional cleaning background"
                         fill
-                        className="object-cover opacity-60"
+                        className="object-cover opacity-40"
                         priority
                         unoptimized
                     />
-                    <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/90 to-slate-900/40" />
+                    <div className="absolute inset-0 bg-gradient-to-r from-slate-900 via-slate-900/95 to-slate-900/70" />
                 </div>
 
                 <Container className="relative z-10">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                    <div className="grid grid-cols-1 lg:grid-cols-12 gap-12 lg:gap-8 items-center">
                         <motion.div
                             initial={{ opacity: 0, x: -30 }}
                             animate={{ opacity: 1, x: 0 }}
                             transition={{ duration: 0.8 }}
-                            className="space-y-8"
+                            className="lg:col-span-7 space-y-8"
                         >
-                            <div className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-blue-500/10 border border-blue-500/20 text-blue-400 text-sm font-semibold">
-                                <Star className="w-4 h-4 fill-blue-400" />
-                                <span>#1 Choice for UK Cleaners</span>
-                            </div>
-
-                            <h1 className="text-4xl md:text-6xl font-black text-white leading-tight">
+                            <h1 className="text-4xl md:text-5xl lg:text-7xl font-black text-white leading-tight">
                                 Insurance That <br />
                                 <span className="text-transparent bg-clip-text bg-gradient-to-r from-blue-400 to-cyan-300">
                                     Actually Pays Out.
                                 </span>
                             </h1>
 
-                            <div className="space-y-4 text-lg text-slate-300">
+                            <div className="space-y-4 text-lg text-slate-300 max-w-xl">
                                 <div className="flex items-start gap-3">
                                     <CheckCircle2 className="w-6 h-6 text-emerald-400 shrink-0 mt-1" />
                                     <p><strong>Treatment Risk Included:</strong> We cover the item you are actually cleaning (unlike standard policies).</p>
@@ -59,65 +58,15 @@ export default function FacebookLandingPage() {
                                     <p><strong>Zurich Underwritten:</strong> The financial strength of a global insurer.</p>
                                 </div>
                             </div>
-
-                            <div className="pt-4 flex flex-col sm:flex-row gap-4">
-                                <a
-                                    href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
-                                    className="inline-flex items-center justify-center px-8 py-5 text-lg rounded-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold shadow-lg shadow-orange-500/20 transition-all hover:scale-105 active:scale-95 group"
-                                >
-                                    Get Your Quote from £120
-                                    <ChevronRight className="w-5 h-5 ml-2 group-hover:translate-x-1 transition-transform" />
-                                </a>
-                                <div className="flex items-center gap-4 px-6 py-4 rounded-full bg-white/5 backdrop-blur-sm border border-white/10">
-                                    <div className="flex -space-x-2">
-                                        {[1, 2, 3, 4].map((i) => (
-                                            <div key={i} className="w-8 h-8 rounded-full bg-slate-700 border-2 border-slate-900 flex items-center justify-center text-[10px] text-white overflow-hidden">
-                                                <Image src={`https://i.pravatar.cc/100?img=${i + 10}`} alt="User" width={32} height={32} unoptimized />
-                                            </div>
-                                        ))}
-                                    </div>
-                                    <div className="text-xs text-slate-300">
-                                        <span className="text-white font-bold block">1,000+ Cleaners</span>
-                                        Joined this month
-                                    </div>
-                                </div>
-                            </div>
                         </motion.div>
 
                         <motion.div
-                            initial={{ opacity: 0, scale: 0.9 }}
-                            animate={{ opacity: 1, scale: 1 }}
+                            initial={{ opacity: 0, y: 30 }}
+                            animate={{ opacity: 1, y: 0 }}
                             transition={{ duration: 0.8, delay: 0.2 }}
-                            className="hidden lg:block relative"
+                            className="lg:col-span-5 relative"
                         >
-                            <div className="absolute -inset-4 bg-gradient-to-r from-blue-500 to-cyan-500 rounded-3xl blur-2xl opacity-20 animate-pulse" />
-                            <div className="relative bg-slate-800/50 backdrop-blur-xl border border-white/10 rounded-2xl p-6 shadow-2xl">
-                                <div className="flex flex-col gap-4">
-                                    <div className="flex items-center justify-between border-b border-white/10 pb-4">
-                                        <div>
-                                            <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Policy Status</p>
-                                            <p className="text-emerald-400 font-bold flex items-center gap-2">
-                                                <ShieldCheck className="w-4 h-4" /> Active & Protected
-                                            </p>
-                                        </div>
-                                        <div className="text-right">
-                                            <p className="text-xs text-slate-400 uppercase tracking-wider font-semibold">Insurer</p>
-                                            <p className="text-white font-bold">Zurich</p>
-                                        </div>
-                                    </div>
-                                    <div className="space-y-3">
-                                        <div className="h-2 bg-slate-700 rounded-full w-3/4" />
-                                        <div className="h-2 bg-slate-700 rounded-full w-1/2" />
-                                        <div className="h-2 bg-slate-700 rounded-full w-5/6" />
-                                    </div>
-                                    <div className="mt-4 p-4 bg-blue-500/20 rounded-xl border border-blue-500/30">
-                                        <p className="text-sm text-blue-200 font-medium">
-                                            "I claimed for a bleach spill on a wool carpet. Polished paid out within 4 days. Unbelievable service."
-                                        </p>
-                                        <p className="text-xs text-blue-300 mt-2 font-bold">- Sarah J, Manchester</p>
-                                    </div>
-                                </div>
-                            </div>
+                            <LeadCaptureForm />
                         </motion.div>
                     </div>
                 </Container>
