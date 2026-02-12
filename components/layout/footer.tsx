@@ -7,7 +7,43 @@ import { Mail, Phone, MapPin, Facebook, Twitter, Linkedin } from "lucide-react"
 import { motion } from "framer-motion"
 import { services } from "@/lib/services"
 
+import { usePathname } from "next/navigation"
+
 export function Footer() {
+    const pathname = usePathname()
+    const isLandingPage = pathname?.startsWith("/landing")
+
+    if (isLandingPage) {
+        return (
+            <footer className="bg-slate-900 text-slate-300 py-12 border-t border-slate-800">
+                <Container>
+                    <div className="flex flex-col items-center text-center">
+                        <div className="relative w-64 h-16 mb-8">
+                            <Image
+                                src="/logo.png"
+                                alt="Polished Insurance"
+                                fill
+                                className="object-contain"
+                            />
+                        </div>
+                        <div className="text-xs text-slate-500 max-w-2xl">
+                            <p className="mb-2">
+                                Polished Insurance is a trading name of Allied Insurance Services Ltd who are authorised and regulated by the Financial Conduct Authority (Ref: 309497).
+                            </p>
+                            <p>
+                                &copy; {new Date().getFullYear()} Polished Insurance. All rights reserved. Registered in England No: 4319831.
+                            </p>
+                        </div>
+                        <div className="mt-8 flex gap-6 text-sm text-slate-400">
+                            <FooterLink href="#">Privacy Policy</FooterLink>
+                            <FooterLink href="#">Terms & Conditions</FooterLink>
+                        </div>
+                    </div>
+                </Container>
+            </footer>
+        )
+    }
+
     return (
         <footer className="bg-slate-900 text-slate-300 py-16 border-t border-slate-800">
             <Container>
