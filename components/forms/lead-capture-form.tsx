@@ -74,15 +74,15 @@ export function LeadCaptureForm({ className }: { className?: string }) {
             <form onSubmit={onSubmit} className="space-y-4">
                 <div className="space-y-2">
                     <Label htmlFor="name" className="text-slate-700">Full Name</Label>
-                    <Input id="name" name="name" required placeholder="Joe Bloggs" className="bg-slate-50 border-slate-200" />
+                    <Input id="name" name="name" required placeholder="Joe Bloggs" className="bg-slate-50 border-slate-200 text-white" />
                 </div>
                 <div className="space-y-2">
                     <Label htmlFor="email" className="text-slate-700">Email Address</Label>
-                    <Input id="email" name="email" required type="email" placeholder="joe@cleaning.co.uk" className="bg-slate-50 border-slate-200" />
+                    <Input id="email" name="email" required type="email" placeholder="joe@cleaning.co.uk" className="bg-slate-50 border-slate-200 text-white" />
                 </div>
                 <div className="space-y-2">
                     <Label htmlFor="phone" className="text-slate-700">Phone Number</Label>
-                    <Input id="phone" name="phone" required type="tel" placeholder="07700 900000" className="bg-slate-50 border-slate-200" />
+                    <Input id="phone" name="phone" required type="tel" placeholder="07700 900000" className="bg-slate-50 border-slate-200 text-white" />
                 </div>
 
                 {error && (
