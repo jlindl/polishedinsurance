@@ -17,6 +17,8 @@ export const metadata: Metadata = {
   keywords: ["Cleaning Insurance", "Public Liability Insurance for Cleaners", "Carpet Cleaning Insurance", "Domestic Cleaning Insurance", "Commercial Cleaning Insurance", "UK"],
 };
 
+export const dynamic = "force-dynamic";
+
 const jsonLd = {
   "@context": "https://schema.org",
   "@type": "InsuranceAgency",
