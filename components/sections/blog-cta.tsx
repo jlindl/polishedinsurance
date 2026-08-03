@@ -1,6 +1,7 @@
 "use client"
 
 import { ChevronRight } from "lucide-react"
+import Link from "next/link"
 
 export function BlogCTA() {
     return (
@@ -10,18 +11,18 @@ export function BlogCTA() {
                     Need Specialised Cleaning Insurance?
                 </h3>
                 <p className="text-slate-600 mb-8 max-w-xl mx-auto text-lg font-medium leading-relaxed">
-                    Protect your business with comprehensive cover starting from just £6.50/month. Get a quote in minutes.
+                    Protect your business with comprehensive cover starting from just £6.50/month. Get in touch and we'll do the rest.
                 </p>
-                <a
-                    href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
+                <Link
+                    href="/contact"
                     className="inline-flex items-center justify-center h-14 px-8 text-lg font-bold text-white rounded-full bg-gradient-to-r from-amber-500 to-orange-600 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 hover:scale-105 active:scale-95 transition-all duration-300 relative overflow-hidden group"
                 >
                     <span className="relative z-10 flex items-center">
-                        Get Your Quote Now
+                        Contact Us
                         <ChevronRight className="w-5 h-5 ml-2 opacity-90 group-hover:translate-x-1 transition-transform" />
                     </span>
                     <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
-                </a>
+                </Link>
             </div>
 
             {/* Decorative Background Elements */}

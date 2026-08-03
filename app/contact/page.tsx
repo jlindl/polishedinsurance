@@ -36,8 +36,8 @@ export default function ContactPage() {
                                     </div>
                                     <div>
                                         <p className="text-sm font-medium text-slate-400 mb-1">Call Us</p>
-                                        <a href="tel:03300568970" className="text-xl text-white hover:text-cyan-400 transition-colors font-medium">
-                                            0330 056 8970
+                                        <a href="tel:01924403370" className="text-xl text-white hover:text-cyan-400 transition-colors font-medium">
+                                            01924 403370
                                         </a>
                                     </div>
                                 </div>

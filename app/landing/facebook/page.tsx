@@ -6,6 +6,7 @@ import { SpecialistBenefits } from "@/components/sections/specialist-benefits"
 import { Testimonials } from "@/components/sections/testimonials"
 import { ChevronRight, ShieldCheck, Star, CheckCircle2 } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 import { motion } from "framer-motion"
 
 import { LeadCaptureForm } from "@/components/forms/lead-capture-form"
@@ -99,12 +100,12 @@ export default function FacebookLandingPage() {
                             Join thousands of UK cleaners who trust Polished Insurance.
                             <br />Get covered in less than 5 minutes.
                         </p>
-                        <a
-                            href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
+                        <Link
+                            href="/contact"
                             className="inline-flex items-center justify-center px-10 py-6 text-xl rounded-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold shadow-2xl shadow-orange-500/30 transition-all hover:scale-105 active:scale-95"
                         >
-                            Get A Quote Now
-                        </a>
+                            Contact Us
+                        </Link>
                     </div>
                 </Container>
             </Section>

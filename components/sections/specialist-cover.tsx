@@ -5,6 +5,7 @@ import { Card, CardContent } from "@/components/ui/card"
 import { ShieldCheck, Users, Wrench, ChevronRight } from "lucide-react"
 import { motion } from "framer-motion"
 import Image from "next/image"
+import Link from "next/link"
 
 const specialistServices = [
     {
@@ -87,16 +88,16 @@ export function SpecialistCover() {
                                         {service.description}
                                     </p>
                                     <div className="mt-auto pt-4 relative z-10 w-full">
-                                        <a
-                                            href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
+                                        <Link
+                                            href="/contact"
                                             className="relative w-full overflow-hidden bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold text-lg h-14 rounded-full shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300 border-none flex items-center justify-center cursor-pointer group hover:scale-105 active:scale-95"
                                         >
                                             <span className="relative z-10 flex items-center justify-center gap-2">
-                                                Get Your Quote Online
+                                                Contact Us
                                                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                             </span>
                                             <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
-                                        </a>
+                                        </Link>
                                     </div>
                                 </CardContent>
                             </Card>

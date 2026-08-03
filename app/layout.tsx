@@ -30,7 +30,7 @@ const jsonLd = {
     "addressCountry": "UK"
   },
   "priceRange": "£",
-  "telephone": "0330 056 8970"
+  "telephone": "01924 403370"
 }
 
 export default function RootLayout({

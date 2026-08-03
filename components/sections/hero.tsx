@@ -5,6 +5,7 @@ import { Container } from "@/components/ui/layout"
 import { motion } from "framer-motion"
 import { ShieldCheck, Star, Users } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function Hero() {
     return (
@@ -59,17 +60,17 @@ export function Hero() {
                                 className="relative group"
                             >
                                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-300 blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
-                                <a
-                                    href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
+                                <Link
+                                    href="/contact"
                                     className="relative inline-flex items-center justify-center px-10 py-7 text-xl rounded-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold shadow-[0_4px_14px_0_rgba(245,158,11,0.39)] hover:shadow-[0_6px_20px_rgba(245,158,11,0.23)] hover:scale-105 border border-white/20 ring-4 ring-orange-500/10 overflow-hidden transition-all duration-300 ease-out active:scale-95"
                                 >
-                                    <span className="relative z-10">Get Your Quote Now</span>
+                                    <span className="relative z-10">Contact Us</span>
                                     <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
-                                </a>
+                                </Link>
                             </motion.div>
 
                             <p className="text-slate-300 text-sm font-medium">
-                                Or call our friendly team on <a href="tel:03300568970" className="text-white hover:text-cyan-300 transition-colors underline underline-offset-4 decoration-blue-400/50 decoration-2">0330 056 8970</a>
+                                Or call our friendly team on <a href="tel:01924403370" className="text-white hover:text-cyan-300 transition-colors underline underline-offset-4 decoration-blue-400/50 decoration-2">01924 403370</a>
                             </p>
                         </div>
 

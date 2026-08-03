@@ -159,25 +159,25 @@ export default async function ServicePage({ params }: { params: Promise<{ slug: 
                                 <div className="relative z-10">
                                     <h2 className="text-2xl font-bold mb-6">Ready to get protected?</h2>
                                     <p className="text-blue-100 mb-8 text-lg">
-                                        Get your quote online in minutes. Instant documentation and cover available immediately.
+                                        Get in touch and our team will get you covered. Instant documentation and cover available immediately.
                                     </p>
                                     <div className="flex flex-col sm:flex-row gap-4">
-                                        <a
-                                            href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
+                                        <Link
+                                            href="/contact"
                                             className="inline-flex items-center justify-center h-14 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold rounded-xl px-8 shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300 relative overflow-hidden group hover:scale-105 active:scale-95"
                                         >
                                             <span className="relative z-10 flex items-center gap-2">
-                                                Get Your Quote Now
+                                                Contact Us
                                                 <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                             </span>
                                             <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
-                                        </a>
+                                        </Link>
                                         <a
-                                            href="tel:03300568970"
+                                            href="tel:01924403370"
                                             className="inline-flex items-center justify-center h-14 border-2 border-white/30 text-white font-semibold rounded-xl px-8 hover:bg-white/10 transition-colors"
                                         >
                                             <Phone className="w-5 h-5 mr-2" />
-                                            0330 056 8970
+                                            01924 403370
                                         </a>
                                     </div>
                                 </div>

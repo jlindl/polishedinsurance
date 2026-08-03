@@ -4,6 +4,7 @@ import { Section, Container } from "@/components/ui/layout"
 import { Button } from "@/components/ui/button"
 import { Check, Shield } from "lucide-react"
 import { motion } from "framer-motion"
+import Link from "next/link"
 
 export function Benefits() {
     return (
@@ -54,13 +55,13 @@ export function Benefits() {
                                 className="relative group inline-block w-full md:w-auto"
                             >
                                 <div className="absolute inset-0 bg-gradient-to-r from-orange-400 to-amber-300 blur-xl opacity-20 group-hover:opacity-40 transition-opacity duration-500" />
-                                <a
-                                    href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
+                                <Link
+                                    href="/contact"
                                     className="relative flex items-center justify-center px-8 py-4 text-lg rounded-full bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold shadow-[0_0_20px_rgba(245,158,11,0.3)] hover:shadow-orange-500/40 border border-white/20 ring-4 ring-orange-500/10 overflow-hidden transition-all duration-300 active:scale-95 hover:scale-105 w-full md:w-auto"
                                 >
-                                    <span className="relative z-10">Get Your Quote Now</span>
+                                    <span className="relative z-10">Contact Us</span>
                                     <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
-                                </a>
+                                </Link>
                             </motion.div>
                         </div>
                     </motion.div>

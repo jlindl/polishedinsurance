@@ -4,6 +4,7 @@ import { Section, Container } from "@/components/ui/layout"
 import { motion } from "framer-motion"
 import { CheckCircle2, ChevronRight, Shield } from "lucide-react"
 import Image from "next/image"
+import Link from "next/link"
 
 export function SpecialistBenefits() {
     return (
@@ -48,7 +49,7 @@ export function SpecialistBenefits() {
                                 We understand the cleaning industry, we have the backing of a leading insurer - <strong className="text-white font-semibold">Zurich</strong> and we have a team of friendly and dedicated insurance experts who can help you to get the right cover for your business.
                             </p>
                             <p className="border-l-4 border-blue-500 pl-6 italic text-white/90">
-                                So if you run a cleaning business and you aren't insured with us, then why not? It's not too late though, just click below to get your quote today.
+                                So if you run a cleaning business and you aren't insured with us, then why not? It's not too late though, just click below to get in touch today.
                             </p>
                         </div>
 
@@ -57,16 +58,16 @@ export function SpecialistBenefits() {
                                 whileHover={{ scale: 1.02 }}
                                 whileTap={{ scale: 0.98 }}
                             >
-                                <a
-                                    href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
+                                <Link
+                                    href="/contact"
                                     className="w-full md:w-auto inline-flex items-center justify-center gap-2 bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 text-white font-bold text-lg px-8 py-4 rounded-full shadow-lg shadow-orange-500/20 hover:shadow-orange-500/40 transition-all duration-300 border-none relative overflow-hidden group hover:scale-105 active:scale-95"
                                 >
                                     <span className="relative z-10 flex items-center gap-2">
-                                        Get Your Quote Online
+                                        Contact Us
                                         <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
                                     </span>
                                     <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
-                                </a>
+                                </Link>
                             </motion.div>
                         </div>
                     </motion.div>

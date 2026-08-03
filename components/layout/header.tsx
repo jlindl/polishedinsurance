@@ -83,27 +83,27 @@ export function Header() {
                             isScrolled ? "border-white/10" : "border-white/20"
                         )}>
                             <a
-                                href="tel:03300568970"
+                                href="tel:01924403370"
                                 className={cn(
                                     "inline-flex items-center justify-center rounded-full font-medium transition-all duration-200 active:scale-95 h-9 px-4 text-sm gap-2 hidden xl:flex text-slate-200 hover:text-white hover:bg-white/5"
                                 )}
                             >
                                 <Phone className="w-4 h-4" />
-                                <span className="font-semibold">0330 056 8970</span>
+                                <span className="font-semibold">01924 403370</span>
                             </a>
-                            <a
-                                href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
+                            <Link
+                                href="/contact"
                                 className={cn(
                                     "inline-flex items-center justify-center h-9 text-sm font-medium relative overflow-hidden rounded-full text-white shadow-lg transition-all duration-300 hover:scale-105 active:scale-95 border border-white/10 px-6 group",
                                     "bg-gradient-to-r from-amber-500 to-orange-600 hover:from-amber-400 hover:to-orange-500 shadow-orange-500/20 hover:shadow-orange-500/40"
                                 )}
                             >
                                 <span className="relative z-10 flex items-center">
-                                    Get a Quote
+                                    Contact Us
                                     <ChevronRight className="w-4 h-4 ml-1 opacity-70 group-hover:translate-x-1 transition-transform" />
                                 </span>
                                 <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
-                            </a>
+                            </Link>
                         </div>
                     </nav>
                 )}
@@ -178,19 +178,20 @@ export function Header() {
                                     transition={{ delay: 0.2 }}
                                     className="flex flex-col gap-3"
                                 >
-                                    <a
-                                        href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true"
+                                    <Link
+                                        href="/contact"
+                                        onClick={() => setIsMobileMenuOpen(false)}
                                         className="inline-flex items-center justify-center w-full rounded-xl bg-gradient-to-r from-amber-500 to-orange-600 text-white font-bold relative overflow-hidden group h-14 px-8 text-lg hover:opacity-90 transition-all active:scale-95"
                                     >
-                                        <span className="relative z-10">Get Your Quote Now</span>
+                                        <span className="relative z-10">Contact Us</span>
                                         <div className="absolute inset-0 -translate-x-full group-hover:animate-[shimmer_1.5s_infinite] bg-gradient-to-r from-transparent via-white/20 to-transparent z-0" />
-                                    </a>
+                                    </Link>
                                     <a
-                                        href="tel:03300568970"
+                                        href="tel:01924403370"
                                         className="inline-flex items-center justify-center w-full rounded-xl border border-white/10 text-slate-200 hover:bg-white/5 hover:text-white h-14 px-8 text-lg font-medium transition-all active:scale-95"
                                     >
                                         <Phone className="w-4 h-4 mr-2" />
-                                        Call 0330 056 8970
+                                        Call 01924 403370
                                     </a>
                                 </motion.div>
                             </div>

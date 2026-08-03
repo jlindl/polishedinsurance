@@ -98,7 +98,7 @@ export function Footer() {
                     >
                         <h3 className="text-white font-semibold mb-6">Quick Links</h3>
                         <ul className="space-y-3 text-sm">
-                            <li><FooterLink href="https://alliedinsurance.schemeserve.com/GetQuote/questions.aspx?SchemeId=7148&NewClient=true">Get a Quote</FooterLink></li>
+                            <li><FooterLink href="/contact">Contact Us</FooterLink></li>
                             <li><FooterLink href="#">Make a Claim</FooterLink></li>
                             <li><FooterLink href="#">Privacy Policy</FooterLink></li>
                             <li><FooterLink href="#">Terms & Conditions</FooterLink></li>
@@ -120,7 +120,7 @@ export function Footer() {
                             </li>
                             <li className="flex items-center gap-3">
                                 <Phone className="w-5 h-5 text-blue-500 shrink-0" />
-                                <a href="tel:03300568970" className="hover:text-white transition-colors">0330 056 8970</a>
+                                <a href="tel:01924403370" className="hover:text-white transition-colors">01924 403370</a>
                             </li>
                             <li className="flex items-center gap-3">
                                 <Mail className="w-5 h-5 text-blue-500 shrink-0" />
