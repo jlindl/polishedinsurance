@@ -33,6 +33,9 @@ export function Footer() {
                             <p>
                                 &copy; {new Date().getFullYear()} Polished Insurance. All rights reserved. Registered in England No: 4319831.
                             </p>
+                            <p className="mt-2">
+                                Website by <a href="https://www.integrate-tech.co.uk" target="_blank" rel="noopener" className="underline hover:text-blue-400">Integrate Tech</a>
+                            </p>
                         </div>
                         <div className="mt-8 flex gap-6 text-sm text-slate-400">
                             <FooterLink href="#">Privacy Policy</FooterLink>
@@ -136,6 +139,9 @@ export function Footer() {
                     </p>
                     <p>
                         &copy; {new Date().getFullYear()} Polished Insurance. All rights reserved. Registered in England No: 4319831.
+                    </p>
+                    <p className="mt-2">
+                        Website by <a href="https://www.integrate-tech.co.uk" target="_blank" rel="noopener" className="underline hover:text-blue-400">Integrate Tech</a>
                     </p>
                 </div>
             </Container>
